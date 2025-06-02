@@ -91,18 +91,20 @@ main {
     text-align: center;
 }
 
-.main-titulo {
-    color: white;
-    font-size: 3rem;
-    font-family: var(--font-family);
-    margin-top: 20px;
-    margin-bottom: 20px;
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
 }
 
-.main-texto  {
-    margin: 1.5rem 1.5rem 0 1.5rem;
-    line-height: 1.5;
-    color: white;
-    font-family: var(--font-family);
-    font-size: 1.5rem;
+.projetos-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
