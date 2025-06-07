@@ -108,3 +108,113 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+
+:root {
+    --primary-color: #ffffff ;
+    --font-size-base: 3rem ;
+    --background-color:#91315786 ;
+    --font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    /* efeito glassmorphism */
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-itens {
+    display: flex;
+    gap: 30px;
+}
+.navbar-itens a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    transition: color 0.3s ease;
+}
+
+.navbar-itens a:hover {
+    color: #ffffffaa;
+}
+
+a i {
+    margin-right: 0.5rem;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    background-color: #030202;
+    background-image: url("../img/Bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.main-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 900px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main-titulo {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--font-family);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-texto  {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    line-height: 1.5;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+}
+
