@@ -83,7 +83,7 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 900px;
-    height: 650px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -105,4 +105,72 @@ main {
     color: white;
     font-family: var(--font-family);
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .navbar-itens {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-itens a {
+        font-size: 1.2rem;
+    }
+
+    .navbar-logo img {
+        width: 120px;
+    }
+
+    .main-titulo {
+        font-size: 2.2rem;
+    }
+
+    .main-texto {
+        font-size: 1.2rem;
+    }
+
+    .main-container {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .main-conteudo {
+        width: 100%;
+        padding: 1.5rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo img {
+        width: 100px;
+    }
+
+    .navbar-itens a {
+        font-size: 1rem;
+    }
+
+    .main-titulo {
+        font-size: 1.8rem;
+    }
+
+    .main-texto {
+        font-size: 1rem;
+    }
+
+    .main-conteudo {
+        width: 100%;
+        padding: 2rem 1.2rem;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        padding: 1rem;
+    }
 }
