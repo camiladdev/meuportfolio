@@ -177,26 +177,27 @@ html {
     background-repeat: no-repeat;
 }
 
-section {
-    padding-top: 100px;
-}
-
-.projetos-container {
+section.projetos-container {
+    padding-top: 150px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250ox, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .projeto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 12px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
+    height: 550px;
     text-align: center;
     color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -204,5 +205,33 @@ section {
 }
 
 .projeto-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.projeto-card h2 {
+    font-size: 3rem;
+    margin: 10px 0 10px 0;
+}
+
+.projeto-card p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.projeto-card a {
+    text-decoration: none;
+    color: white;
+}
+
+.projeto-card a:visited {
+    color: white;
+    text-decoration: none;
 }
