@@ -66,43 +66,55 @@ html {
     background-repeat: no-repeat;
 }
 
-main {
-    padding-top: 100px;
+.icones-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 1rem;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px);
-    text-align: center;
+.card-contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.main-conteudo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 900px;
-    height: 650px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.card {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.main-titulo {
-    color: white;
-    font-size: 3rem;
-    font-family: var(--font-family);
-    margin-top: 20px;
-    margin-bottom: 20px;
+.card:hover {
+  transform: scale(1.05);
 }
 
-.main-texto  {
-    margin: 1.5rem 1.5rem 0 1.5rem;
-    line-height: 1.5;
-    color: white;
-    font-family: var(--font-family);
-    font-size: 1.5rem;
+.card a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card a i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card a h2 {
+  font-size: 1rem;
 }
